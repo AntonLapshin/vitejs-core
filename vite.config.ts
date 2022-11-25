@@ -9,11 +9,9 @@ export default defineConfig({
     federation({
       name: 'core',
       filename: 'remoteEntry.js',
-      // Modules to expose
       exposes: {
-        './Auth': './src/utils/auth.ts',
+        './Api': './src/utils/api.ts',
       },
-      shared: ['react'],
     }),
   ],
 });
