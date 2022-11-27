@@ -12,6 +12,10 @@ export default defineConfig({
       exposes: {
         './Api': './src/utils/api.ts',
       },
+      remotes: {
+        mfe1: 'http://localhost:4174/assets/remoteEntry.js',
+      },
+      shared: ['react', 'react-dom'],
     }),
   ],
 });
